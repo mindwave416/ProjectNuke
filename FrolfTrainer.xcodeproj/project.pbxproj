@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082032361D2369DF00291538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032351D2369DF00291538 /* AppDelegate.swift */; };
+		082032381D2369DF00291538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032371D2369DF00291538 /* ViewController.swift */; };
+		0820323B1D2369DF00291538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082032391D2369DF00291538 /* Main.storyboard */; };
+		0820323D1D2369DF00291538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0820323C1D2369DF00291538 /* Assets.xcassets */; };
+		082032401D2369DF00291538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0820323E1D2369DF00291538 /* LaunchScreen.storyboard */; };
+		0820324B1D2369E000291538 /* FrolfTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820324A1D2369E000291538 /* FrolfTrainerTests.swift */; };
+		082032561D2369E000291538 /* FrolfTrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032551D2369E000291538 /* FrolfTrainerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		082032471D2369E000291538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0820322A1D2369DF00291538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082032311D2369DF00291538;
+			remoteInfo = FrolfTrainer;
+		};
+		082032521D2369E000291538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0820322A1D2369DF00291538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082032311D2369DF00291538;
+			remoteInfo = FrolfTrainer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		082032321D2369DF00291538 /* FrolfTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrolfTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		082032351D2369DF00291538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		082032371D2369DF00291538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0820323A1D2369DF00291538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0820323C1D2369DF00291538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0820323F1D2369DF00291538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		082032411D2369DF00291538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082032461D2369E000291538 /* FrolfTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrolfTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0820324A1D2369E000291538 /* FrolfTrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrolfTrainerTests.swift; sourceTree = "<group>"; };
+		0820324C1D2369E000291538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082032511D2369E000291538 /* FrolfTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrolfTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		082032551D2369E000291538 /* FrolfTrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrolfTrainerUITests.swift; sourceTree = "<group>"; };
+		082032571D2369E000291538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0820322F1D2369DF00291538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082032431D2369E000291538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0820324E1D2369E000291538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082032291D2369DF00291538 = {
+			isa = PBXGroup;
+			children = (
+				082032341D2369DF00291538 /* FrolfTrainer */,
+				082032491D2369E000291538 /* FrolfTrainerTests */,
+				082032541D2369E000291538 /* FrolfTrainerUITests */,
+				082032331D2369DF00291538 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		082032331D2369DF00291538 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				082032321D2369DF00291538 /* FrolfTrainer.app */,
+				082032461D2369E000291538 /* FrolfTrainerTests.xctest */,
+				082032511D2369E000291538 /* FrolfTrainerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		082032341D2369DF00291538 /* FrolfTrainer */ = {
+			isa = PBXGroup;
+			children = (
+				082032351D2369DF00291538 /* AppDelegate.swift */,
+				082032371D2369DF00291538 /* ViewController.swift */,
+				082032391D2369DF00291538 /* Main.storyboard */,
+				0820323C1D2369DF00291538 /* Assets.xcassets */,
+				0820323E1D2369DF00291538 /* LaunchScreen.storyboard */,
+				082032411D2369DF00291538 /* Info.plist */,
+			);
+			path = FrolfTrainer;
+			sourceTree = "<group>";
+		};
+		082032491D2369E000291538 /* FrolfTrainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0820324A1D2369E000291538 /* FrolfTrainerTests.swift */,
+				0820324C1D2369E000291538 /* Info.plist */,
+			);
+			path = FrolfTrainerTests;
+			sourceTree = "<group>";
+		};
+		082032541D2369E000291538 /* FrolfTrainerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				082032551D2369E000291538 /* FrolfTrainerUITests.swift */,
+				082032571D2369E000291538 /* Info.plist */,
+			);
+			path = FrolfTrainerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		082032311D2369DF00291538 /* FrolfTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0820325A1D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainer" */;
+			buildPhases = (
+				0820322E1D2369DF00291538 /* Sources */,
+				0820322F1D2369DF00291538 /* Frameworks */,
+				082032301D2369DF00291538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrolfTrainer;
+			productName = FrolfTrainer;
+			productReference = 082032321D2369DF00291538 /* FrolfTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		082032451D2369E000291538 /* FrolfTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0820325D1D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerTests" */;
+			buildPhases = (
+				082032421D2369E000291538 /* Sources */,
+				082032431D2369E000291538 /* Frameworks */,
+				082032441D2369E000291538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082032481D2369E000291538 /* PBXTargetDependency */,
+			);
+			name = FrolfTrainerTests;
+			productName = FrolfTrainerTests;
+			productReference = 082032461D2369E000291538 /* FrolfTrainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		082032501D2369E000291538 /* FrolfTrainerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082032601D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerUITests" */;
+			buildPhases = (
+				0820324D1D2369E000291538 /* Sources */,
+				0820324E1D2369E000291538 /* Frameworks */,
+				0820324F1D2369E000291538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082032531D2369E000291538 /* PBXTargetDependency */,
+			);
+			name = FrolfTrainerUITests;
+			productName = FrolfTrainerUITests;
+			productReference = 082032511D2369E000291538 /* FrolfTrainerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0820322A1D2369DF00291538 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MediocreApps;
+				TargetAttributes = {
+					082032311D2369DF00291538 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					082032451D2369E000291538 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 082032311D2369DF00291538;
+					};
+					082032501D2369E000291538 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 082032311D2369DF00291538;
+					};
+				};
+			};
+			buildConfigurationList = 0820322D1D2369DF00291538 /* Build configuration list for PBXProject "FrolfTrainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 082032291D2369DF00291538;
+			productRefGroup = 082032331D2369DF00291538 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				082032311D2369DF00291538 /* FrolfTrainer */,
+				082032451D2369E000291538 /* FrolfTrainerTests */,
+				082032501D2369E000291538 /* FrolfTrainerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		082032301D2369DF00291538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082032401D2369DF00291538 /* LaunchScreen.storyboard in Resources */,
+				0820323D1D2369DF00291538 /* Assets.xcassets in Resources */,
+				0820323B1D2369DF00291538 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082032441D2369E000291538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0820324F1D2369E000291538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0820322E1D2369DF00291538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082032381D2369DF00291538 /* ViewController.swift in Sources */,
+				082032361D2369DF00291538 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		082032421D2369E000291538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0820324B1D2369E000291538 /* FrolfTrainerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0820324D1D2369E000291538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082032561D2369E000291538 /* FrolfTrainerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		082032481D2369E000291538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082032311D2369DF00291538 /* FrolfTrainer */;
+			targetProxy = 082032471D2369E000291538 /* PBXContainerItemProxy */;
+		};
+		082032531D2369E000291538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082032311D2369DF00291538 /* FrolfTrainer */;
+			targetProxy = 082032521D2369E000291538 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		082032391D2369DF00291538 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0820323A1D2369DF00291538 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0820323E1D2369DF00291538 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0820323F1D2369DF00291538 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		082032581D2369E000291538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		082032591D2369E000291538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0820325B1D2369E000291538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FrolfTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0820325C1D2369E000291538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FrolfTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0820325E1D2369E000291538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FrolfTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrolfTrainer.app/FrolfTrainer";
+			};
+			name = Debug;
+		};
+		0820325F1D2369E000291538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FrolfTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrolfTrainer.app/FrolfTrainer";
+			};
+			name = Release;
+		};
+		082032611D2369E000291538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FrolfTrainerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FrolfTrainer;
+			};
+			name = Debug;
+		};
+		082032621D2369E000291538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FrolfTrainerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FrolfTrainer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0820322D1D2369DF00291538 /* Build configuration list for PBXProject "FrolfTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082032581D2369E000291538 /* Debug */,
+				082032591D2369E000291538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0820325A1D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0820325B1D2369E000291538 /* Debug */,
+				0820325C1D2369E000291538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0820325D1D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0820325E1D2369E000291538 /* Debug */,
+				0820325F1D2369E000291538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		082032601D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082032611D2369E000291538 /* Debug */,
+				082032621D2369E000291538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0820322A1D2369DF00291538 /* Project object */;
+}
