@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RootViewController.swift
 //  FrolfTrainer
 //
 //  Created by Benjamin Naugle on 6/28/16.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setViewControllers([MainViewController()], animated: true)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

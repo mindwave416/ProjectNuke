@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		082032361D2369DF00291538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032351D2369DF00291538 /* AppDelegate.swift */; };
-		082032381D2369DF00291538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032371D2369DF00291538 /* ViewController.swift */; };
+		082032381D2369DF00291538 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032371D2369DF00291538 /* RootViewController.swift */; };
 		0820323B1D2369DF00291538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082032391D2369DF00291538 /* Main.storyboard */; };
 		0820323D1D2369DF00291538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0820323C1D2369DF00291538 /* Assets.xcassets */; };
 		082032401D2369DF00291538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0820323E1D2369DF00291538 /* LaunchScreen.storyboard */; };
 		0820324B1D2369E000291538 /* FrolfTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820324A1D2369E000291538 /* FrolfTrainerTests.swift */; };
 		082032561D2369E000291538 /* FrolfTrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032551D2369E000291538 /* FrolfTrainerUITests.swift */; };
+		082032641D236E3200291538 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032631D236E3200291538 /* MainViewController.swift */; };
+		082032661D236EE800291538 /* ScoreKeeperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032651D236EE800291538 /* ScoreKeeperController.swift */; };
+		082032681D236F2E00291538 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032671D236F2E00291538 /* ScoreView.swift */; };
+		0820326A1D23748600291538 /* scoreCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 082032691D23748600291538 /* scoreCard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		082032321D2369DF00291538 /* FrolfTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrolfTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082032351D2369DF00291538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		082032371D2369DF00291538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		082032371D2369DF00291538 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		0820323A1D2369DF00291538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0820323C1D2369DF00291538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0820323F1D2369DF00291538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		082032511D2369E000291538 /* FrolfTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrolfTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		082032551D2369E000291538 /* FrolfTrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrolfTrainerUITests.swift; sourceTree = "<group>"; };
 		082032571D2369E000291538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082032631D236E3200291538 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		082032651D236EE800291538 /* ScoreKeeperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreKeeperController.swift; sourceTree = "<group>"; };
+		082032671D236F2E00291538 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		082032691D23748600291538 /* scoreCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreCard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		082032341D2369DF00291538 /* FrolfTrainer */ = {
 			isa = PBXGroup;
 			children = (
+				082032691D23748600291538 /* scoreCard.png */,
 				082032351D2369DF00291538 /* AppDelegate.swift */,
-				082032371D2369DF00291538 /* ViewController.swift */,
+				082032371D2369DF00291538 /* RootViewController.swift */,
 				082032391D2369DF00291538 /* Main.storyboard */,
 				0820323C1D2369DF00291538 /* Assets.xcassets */,
 				0820323E1D2369DF00291538 /* LaunchScreen.storyboard */,
 				082032411D2369DF00291538 /* Info.plist */,
+				082032631D236E3200291538 /* MainViewController.swift */,
+				082032651D236EE800291538 /* ScoreKeeperController.swift */,
+				082032671D236F2E00291538 /* ScoreView.swift */,
 			);
 			path = FrolfTrainer;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					082032311D2369DF00291538 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GEWYPZ8K58;
 					};
 					082032451D2369E000291538 = {
 						CreatedOnToolsVersion = 7.3;
@@ -231,6 +244,7 @@
 			files = (
 				082032401D2369DF00291538 /* LaunchScreen.storyboard in Resources */,
 				0820323D1D2369DF00291538 /* Assets.xcassets in Resources */,
+				0820326A1D23748600291538 /* scoreCard.png in Resources */,
 				0820323B1D2369DF00291538 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082032381D2369DF00291538 /* ViewController.swift in Sources */,
+				082032641D236E3200291538 /* MainViewController.swift in Sources */,
+				082032381D2369DF00291538 /* RootViewController.swift in Sources */,
+				082032661D236EE800291538 /* ScoreKeeperController.swift in Sources */,
 				082032361D2369DF00291538 /* AppDelegate.swift in Sources */,
+				082032681D236F2E00291538 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FrolfTrainer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FrolfTrainer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = naugle.FrolfTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
