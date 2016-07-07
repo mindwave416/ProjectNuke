@@ -18,6 +18,8 @@
 		082032661D236EE800291538 /* ScoreKeeperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032651D236EE800291538 /* ScoreKeeperController.swift */; };
 		082032681D236F2E00291538 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082032671D236F2E00291538 /* ScoreView.swift */; };
 		0820326A1D23748600291538 /* scoreCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 082032691D23748600291538 /* scoreCard.png */; };
+		08404B471D2E1F5800AB480D /* ScoreCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08404B451D2E1F5800AB480D /* ScoreCardController.swift */; };
+		08404B481D2E1F5800AB480D /* ScoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08404B461D2E1F5800AB480D /* ScoreCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		082032651D236EE800291538 /* ScoreKeeperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreKeeperController.swift; sourceTree = "<group>"; };
 		082032671D236F2E00291538 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		082032691D23748600291538 /* scoreCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreCard.png; sourceTree = "<group>"; };
+		08404B451D2E1F5800AB480D /* ScoreCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCardController.swift; sourceTree = "<group>"; };
+		08404B461D2E1F5800AB480D /* ScoreCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			children = (
 				082032691D23748600291538 /* scoreCard.png */,
 				082032351D2369DF00291538 /* AppDelegate.swift */,
+				08404B451D2E1F5800AB480D /* ScoreCardController.swift */,
+				08404B461D2E1F5800AB480D /* ScoreCardView.swift */,
 				082032371D2369DF00291538 /* RootViewController.swift */,
 				082032391D2369DF00291538 /* Main.storyboard */,
 				0820323C1D2369DF00291538 /* Assets.xcassets */,
@@ -271,9 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				082032641D236E3200291538 /* MainViewController.swift in Sources */,
+				08404B481D2E1F5800AB480D /* ScoreCardView.swift in Sources */,
 				082032381D2369DF00291538 /* RootViewController.swift in Sources */,
 				082032661D236EE800291538 /* ScoreKeeperController.swift in Sources */,
 				082032361D2369DF00291538 /* AppDelegate.swift in Sources */,
+				08404B471D2E1F5800AB480D /* ScoreCardController.swift in Sources */,
 				082032681D236F2E00291538 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +515,7 @@
 				0820325C1D2369E000291538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0820325D1D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				0820325F1D2369E000291538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		082032601D2369E000291538 /* Build configuration list for PBXNativeTarget "FrolfTrainerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				082032621D2369E000291538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
