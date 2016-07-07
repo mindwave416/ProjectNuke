@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ScoreCardController: UIViewController, UINavigationControllerDelegate {
+class ScoreCardController: UIViewController, UINavigationControllerDelegate, ScoreCardDelegate {
     
     var scoreCardView: ScoreCardView {return view as! ScoreCardView}
     
@@ -19,6 +19,7 @@ class ScoreCardController: UIViewController, UINavigationControllerDelegate {
         view = ScoreCardView(frame: UIScreen.mainScreen().bounds)
         self.navigationItem.title = "Score Card"
         self.edgesForExtendedLayout = UIRectEdge.None
+        scoreCardView.scoreCardDelegate = self
         
     }
     
@@ -26,5 +27,8 @@ class ScoreCardController: UIViewController, UINavigationControllerDelegate {
         
     }
     
+    func pushScoreKeeper(){
+        navigationController?.pushViewController(ScoreKeeperController(), animated: true)
+    }
     
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UITabBarController {
     
-    private var scoreKeeperController: ScoreKeeperController? = nil
+    private var scoreCardController: ScoreCardController? = nil
 
     
     override func viewDidLoad() {
@@ -20,12 +20,12 @@ class MainViewController: UITabBarController {
         let scoreTab = UITabBarItem(title: "Score", image: scoreIcon, tag: 1)
         
         //VIEW CONTROLLERS
-        scoreKeeperController = ScoreKeeperController()
-        scoreKeeperController!.tabBarItem = scoreTab
+        scoreCardController = ScoreCardController()
+        scoreCardController!.tabBarItem = scoreTab
         
         
         //NAVIGATION WRAPPING THE VIEW CONTROLLERS
-        let nav1 = UINavigationController(rootViewController: scoreKeeperController!)
+        let nav1 = UINavigationController(rootViewController: scoreCardController!)
         
         
         //ARRAY OF THEM FOR THE TAB BAR

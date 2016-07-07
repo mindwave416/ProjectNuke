@@ -1,5 +1,5 @@
 //
-//  ScoreView.swift
+//  ScoreKeeperView.swift
 //  FrolfTrainer
 //
 //  Created by Benjamin Naugle on 6/28/16.
@@ -7,18 +7,19 @@
 //
 import UIKit
 
-protocol ScoreViewDelegate: class
+protocol ScoreKeeperViewDelegate: class
 {
-    
+    func setScore()
 }
-class ScoreView: UIView, UITextFieldDelegate
+class ScoreKeeperView: UIView, UITextFieldDelegate
 {
     var stdFont = UIFont(name: "AmericanTypewriter-Bold", size: 100)
     var score: UILabel? = nil
     var plusOne: UIButton? = nil
     var minusOne: UIButton? = nil
+    var setScore: UIButton? = nil
     
-    weak var delegate: ScoreViewDelegate? = nil
+    weak var delegate: ScoreKeeperViewDelegate? = nil
 //    var keyboardIsShown: Bool = false
     
     override init(frame: CGRect) {
@@ -34,22 +35,29 @@ class ScoreView: UIView, UITextFieldDelegate
         
         plusOne = UIButton(frame: CGRectZero)
         plusOne?.enabled = true
-        plusOne?.addTarget(self, action: #selector(ScoreView.addOne), forControlEvents: .TouchUpInside)
+        plusOne?.addTarget(self, action: #selector(ScoreKeeperView.addOne), forControlEvents: .TouchUpInside)
         plusOne?.setTitle("+", forState: .Normal)
         plusOne?.backgroundColor = UIColor.grayColor()
         plusOne?.titleLabel?.font = stdFont
         
         
         minusOne = UIButton(frame: CGRectZero)
-        minusOne?.addTarget(self, action: #selector(ScoreView.subtractOne), forControlEvents: .TouchUpInside)
+        minusOne?.addTarget(self, action: #selector(ScoreKeeperView.subtractOne), forControlEvents: .TouchUpInside)
         minusOne?.setTitle("-", forState: .Normal)
         minusOne?.backgroundColor = UIColor.grayColor()
         minusOne?.titleLabel?.font = stdFont
         
+        setScore = UIButton(frame: CGRectZero)
+        setScore?.enabled = true
+        setScore?.addTarget(self, action: #selector(ScoreKeeperView.set), forControlEvents: .TouchUpInside)
+        setScore?.setTitle("Set!", forState: .Normal)
+        setScore?.backgroundColor = UIColor.grayColor()
+        setScore?.titleLabel?.font = stdFont
+        
         addSubview(plusOne!)
         addSubview(score!)
         addSubview(minusOne!)
-        
+        addSubview(setScore!)
     }
     
     func addOne(){
@@ -58,11 +66,16 @@ class ScoreView: UIView, UITextFieldDelegate
     func subtractOne(){
         score?.text = String(Int(score!.text!)! - 1)
     }
+    func set(){
+        //MARK: passing up the score here
+        delegate?.setScore()
+    }
     override func layoutSubviews() {
         
         plusOne?.frame = CGRectMake(frame.width*9/24, frame.height/6, frame.height/6, frame.height/6)
         score?.frame = CGRectMake(0, frame.height/3, frame.width, frame.height/3)
         minusOne?.frame = CGRectMake(frame.width*9/24, frame.height*4/6, frame.height/6, frame.height/6)
+        setScore?.frame = CGRectMake(frame.width/12, frame.height/24, frame.width/6, frame.height/6)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

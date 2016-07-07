@@ -10,16 +10,17 @@ import UIKit
 
 protocol ScoreCardDelegate: class
 {
-    
+    func pushScoreKeeper()
 }
-class ScoreCardView: UIView, UITextFieldDelegate
+class ScoreCardView: UIView, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate
 {
     var stdFont = UIFont(name: "AmericanTypewriter-Bold", size: 100)
     var score: UILabel? = nil
     var plusOne: UIButton? = nil
     var minusOne: UIButton? = nil
+    var playerTable: UITableView? = nil
     
-    weak var delegate: ScoreViewDelegate? = nil
+    weak var scoreCardDelegate: ScoreCardDelegate? = nil
     //    var keyboardIsShown: Bool = false
     
     override init(frame: CGRect) {
@@ -47,10 +48,31 @@ class ScoreCardView: UIView, UITextFieldDelegate
         minusOne?.backgroundColor = UIColor.grayColor()
         minusOne?.titleLabel?.font = stdFont
         
-        addSubview(plusOne!)
-        addSubview(score!)
-        addSubview(minusOne!)
+        playerTable = UITableView(frame: CGRectZero)
+        playerTable?.dataSource = self
+        playerTable?.delegate = self
+        addSubview(playerTable!)
+//        addSubview(plusOne!)
+//        addSubview(score!)
+//        addSubview(minusOne!)
         
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell: UITableViewCell = UITableViewCell(style: .Value1, reuseIdentifier: "")
+       
+        return cell
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("here")
+        scoreCardDelegate?.pushScoreKeeper()
     }
     
     func addOne(){
@@ -60,7 +82,7 @@ class ScoreCardView: UIView, UITextFieldDelegate
         score?.text = String(Int(score!.text!)! - 1)
     }
     override func layoutSubviews() {
-        
+        playerTable?.frame = CGRectMake(0, 0, bounds.width, bounds.height)
         plusOne?.frame = CGRectMake(frame.width*9/24, frame.height/6, frame.height/6, frame.height/6)
         score?.frame = CGRectMake(0, frame.height/3, frame.width, frame.height/3)
         minusOne?.frame = CGRectMake(frame.width*9/24, frame.height*4/6, frame.height/6, frame.height/6)

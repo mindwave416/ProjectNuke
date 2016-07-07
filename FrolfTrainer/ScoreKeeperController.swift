@@ -9,16 +9,17 @@
 import Foundation
 import UIKit
 
-class ScoreKeeperController: UIViewController, UINavigationControllerDelegate {
+class ScoreKeeperController: UIViewController, UINavigationControllerDelegate, ScoreKeeperViewDelegate {
     
-    var scoreView: ScoreView {return view as! ScoreView}
+    var scoreKeeperView: ScoreKeeperView {return view as! ScoreKeeperView}
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        view = ScoreView(frame: UIScreen.mainScreen().bounds)
+        view = ScoreKeeperView(frame: UIScreen.mainScreen().bounds)
         self.navigationItem.title = "Score Card"
         self.edgesForExtendedLayout = UIRectEdge.None
+        scoreKeeperView.delegate = self
         
     }
     
@@ -26,5 +27,8 @@ class ScoreKeeperController: UIViewController, UINavigationControllerDelegate {
         
     }
     
+    func setScore() {
+        navigationController?.popViewControllerAnimated(true)
+    }
     
 }
